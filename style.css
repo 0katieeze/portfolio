@@ -31,6 +31,13 @@
 
   /* Size */
   --size-border-radius: 4px;
+
+  /* Animation */
+  --animation-duration: 300ms;
+
+  /* Icon_Image Max */
+  --icon_image-max-width: 100%;
+  --icon_image-max-height: 100%;
 }
 
 /* Universal tags */
@@ -150,4 +157,92 @@ p {
   padding: 8px 12px;
   border: 2px solid var(--color-apricot);
   border-radius: var(--size-border-radius);
+}
+
+/* Section common */
+.section {
+  text-align: center;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About */
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  font-size: 70px;
+  /* background-color: yellow; */
+  margin: auto;
+  color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.major__icon i {
+  transition: all var(--animation-duration);
+}
+
+.major__icon:hover i {
+  color: var(--color-apricot);
+  transform: rotate(30deg) scale(1.1);
+}
+
+.major__title,
+.major__description {
+  color: var(--color-dark-grey);
+}
+
+.major__description {
+  font-size: var(--font-small);
+}
+
+.job,
+.education {
+  display: flex;
+  align-items: center;
+}
+
+.job__description,
+.education__description {
+  margin: 8px 16px;
+  text-align: left;
+}
+
+.job__name,
+.job__period,
+.education__name,
+.education__period {
+  color: var(--color-light-grey);
+}
+
+.job__name,
+.education__name {
+  font-size: var(--font-small);
+}
+
+.job__period,
+.education__period {
+  font-size: var(--font-micro);
+}
+
+.job__brand,
+.education__brand {
+  width: 100px;
+  height: 40px;
+  margin: 2px;
+}
+
+.job__logo,
+.education__logo {
+  max-width: var(--icon_image-max-width);
+  max-height: var(--icon_image-max-height);
 }
