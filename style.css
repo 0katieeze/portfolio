@@ -163,6 +163,11 @@ p {
 .section {
   text-align: center;
   padding: 50px;
+
+  margin: auto;
+}
+
+.section__container {
   max-width: 1200px;
   margin: auto;
 }
@@ -245,4 +250,59 @@ p {
 .education__logo {
   max-width: var(--icon_image-max-width);
   max-height: var(--icon_image-max-height);
+}
+
+/* Skill */
+#skills {
+  background-color: #fdf2e5;
+}
+
+.skillset {
+  display: flex;
+  background-color: var(--color-light-grey);
+  color: var(--color-light-white);
+  margin: 20px 0;
+}
+
+.skillset__title {
+  color: var(--color-white);
+}
+
+.skillset__left {
+  flex-basis: 60%;
+  background-color: var(--color-dark-grey);
+  padding: 20px 40px;
+}
+
+.skill {
+  margin-bottom: 32px;
+}
+
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill__bar {
+  width: 100%;
+  height: 4px;
+  background-color: var(--color-grey);
+}
+
+.skill__value {
+  height: 4px;
+  background-color: var(--color-apricot);
+}
+
+.skillset__right {
+  flex-basis: 40%;
+}
+
+.tools {
+  background-color: var(--color-grey);
+}
+
+.tools,
+.etc {
+  padding: 20px;
 }
