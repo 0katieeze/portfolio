@@ -98,12 +98,18 @@ p {
 
 /* Nav bar */
 #navbar {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-apricot);
   align-items: center;
-  color: var(--color-white);
+  color: var(--color-apricot);
   padding: 16px;
+  background-color: transparent;
+  transition: all var(--animation-duration) ease-in-out;
 }
 
 .navbar__menu {
@@ -115,6 +121,22 @@ p {
   font-weight: var(--weight-semi-bold);
 }
 
+#navbar.navbar--dark {
+  background-color: var(--color-apricot);
+  color: var(--color-white);
+  padding: 8px;
+}
+
+/*  */
+.navbar__logo a {
+  color: var(--color-apricot);
+}
+
+/*  */
+.navbar--dark a {
+  color: var(--color-white);
+}
+
 .navbar__menu__item {
   padding: 8px 12px;
   margin: 0 4px;
@@ -122,17 +144,18 @@ p {
   border-radius: var(--size-border-radius);
 }
 
-/* .navbar__menu__item.active {
-  border: 1px solid var(--color-white);
-} */
+.navbar__menu__item.active {
+  border: 1px solid var(--color-apricot);
+}
 
 .navbar__menu__item:hover {
   background-color: var(--color-dark-apricot);
+  color: var(--color-white);
 }
 
 .navbar__toggle-btn {
   position: absolute;
-  top: 24px;
+  top: 14.5px;
   right: 32px;
   font-size: 24px;
   color: var(--color-white);
@@ -145,6 +168,7 @@ p {
 #home {
   background: url(imgs/profile/2.png) top/cover no-repeat;
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 
@@ -504,6 +528,12 @@ p {
 @media screen and (max-width: 768px) {
   .navbar__toggle-btn {
     display: block;
+    color: var(--color-apricot);
+  }
+
+  /*  */
+  .navbar--dark .navbar__toggle-btn {
+    color: var(--color-white);
   }
 
   #navbar {
