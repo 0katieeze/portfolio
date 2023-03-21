@@ -16,6 +16,7 @@
   --color-apricot: #ffab67;
   --color-light-apricot: #fec08d;
   --color-dark-apricot: #ff8520;
+  --color-brown: #be6319;
 
   /* Font size */
   --font-large: 48px;
@@ -190,6 +191,10 @@ p {
   border: 1px solid var(--color-blue);
   border-radius: 50%;
   margin-bottom: 16px;
+}
+
+.fa-solid.fa-wand-magic-sparkles {
+  font-size: 57px;
 }
 
 .major__icon i {
@@ -372,7 +377,7 @@ p {
 
 .project__description {
   position: absolute;
-  background-color: var(--color-black);
+  background-color: var(--color-brown);
   display: flex;
   flex-direction: column;
   justify-content: center;
