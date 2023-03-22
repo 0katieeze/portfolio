@@ -21,6 +21,7 @@ navbarMenu.addEventListener("click", (event) => {
   if (link == null) {
     return;
   }
+  navbarMenu.classList.remove("open");
   scrollIntoView(link);
 
   // console.log(event.target.dataset.link);
@@ -28,9 +29,15 @@ navbarMenu.addEventListener("click", (event) => {
   // scrollTo.scrollIntoView({ behavior: "smooth" });
 });
 
+// Navbar toggle button for small screen
+const navbarToggleBtn = document.querySelector(".navbar__toggle-btn");
+navbarToggleBtn.addEventListener("click", () => {
+  navbarMenu.classList.toggle("open");
+});
+
 // Handle click on "contact me" button on home
-const contactBtn = document.querySelector(".home__contact");
-contactBtn.addEventListener("click", (event) => {
+const homecontactBtn = document.querySelector(".home__contact");
+homecontactBtn.addEventListener("click", () => {
   scrollIntoView("#contact");
 
   // const scrollTo = document.querySelector("#contact");
