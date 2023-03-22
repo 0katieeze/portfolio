@@ -45,6 +45,22 @@ document.addEventListener("scroll", () => {
   // console.log(1 - window.scrollY / homeHeight);
 });
 
+// Show "up_button" button when scrolling down
+document.addEventListener("scroll", () => {
+  const upButton = document.querySelector(".up_button");
+  if (window.scrollY > homeHeight / 2) {
+    upButton.classList.add("visible");
+  } else {
+    upButton.classList.remove("visible");
+  }
+});
+
+// Handle click on the "uo_button" button
+const upButton = document.querySelector(".up_button");
+upButton.addEventListener("click", () => {
+  scrollIntoView("#home");
+});
+
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({ behavior: "smooth" });

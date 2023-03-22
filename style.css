@@ -527,6 +527,31 @@ p {
   margin: 0 1.5px;
 }
 
+/* Scroll */
+.up_button {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 45px;
+  height: 45px;
+  font-size: 30px;
+  color: var(--color-white);
+  padding: 2px;
+  background-color: var(--color-dark-apricot);
+  border-radius: 50%;
+  border: 2px solid var(--color-white);
+  opacity: 0;
+  /* display: none; */
+  pointer-events: none;
+  transition: opacity 300ms ease-in;
+  /* transition: all 300ms ease-in; */
+}
+.up_button.visible {
+  opacity: 1;
+  /* display: block; */
+  pointer-events: auto;
+}
+
 /* For below 768px screen width*/
 @media screen and (max-width: 768px) {
   .navbar__toggle-btn {
