@@ -86,19 +86,6 @@ workBtnContainer.addEventListener("click", (e) => {
   target.classList.add("selected");
 
   projectsContainer.classList.add("anim-out");
-  // console.log(filter);
-
-  // console.log(`--------------`);
-  // for (let project of projects) {
-  //   console.log(project);
-  // }
-
-  // console.log(`--------------`);
-  // let project;
-  // for (let i = 0; i < projects.length; i++) {
-  //   project = projects[i];
-  //   console.log(project);
-  // }
 
   setTimeout(() => {
     projects.forEach((project) => {

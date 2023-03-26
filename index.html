@@ -21,26 +21,28 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
   </head>
   <body>
     <!-- <h1>Heading</h1>
-    <h2>Heading</h2>
     <h3>Heading</h3>
+    <h4>Heading</h4>
     <p>Paragraph</p> -->
 
     <!-- Nav bar -->
     <nav id="navbar">
       <div class="navbar__logo">
         <i class="fab fa-diaspora"></i>
-        <a href="#">Kate</a>
+        <a href="#">KATE</a>
       </div>
       <ul class="navbar__menu">
         <li class="navbar__menu__item active" data-link="#home">Home</li>
-        <li class="navbar__menu__item" data-link="#about">About</li>
+        <li class="navbar__menu__item" data-link="#work">Work</li>
         <li class="navbar__menu__item" data-link="#skills">Skills</li>
-        <li class="navbar__menu__item" data-link="#work">My work</li>
+        <li class="navbar__menu__item" data-link="#about">About</li>
         <li class="navbar__menu__item" data-link="#testimonials">
           Testimonials
         </li>
@@ -51,248 +53,40 @@
       <button class="navbar__toggle-btn">
         <i class="fa-solid fa-bars"></i>
       </button>
+      <button class="navbar__toggle-btn__xmark">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
     </nav>
 
     <!-- Home -->
     <section id="home">
       <div class="home__container">
-        <img
-          src="imgs/profile/profile-pic.png"
-          alt="Kate's profile photo"
-          class="home__avatar"
-        />
-        <h1 class="home__title">Hello, <br />I'm Dream Coder</h1>
-        <h2 class="home__description">A Frontend Developer who can design</h2>
+        <h1 class="home__title">G'day, I'm Kate!</h1>
+        <h3 class="home__description">
+          <span> I'm a Designer </span>turned
+          <span class="home__description__career">Front-end Developer</span>
+          <br /><span>and </span>
+          <span class="home__description__empty"></span>
+          <span class="home__description__flip-contianer">
+            <span class="flip_travler">world traveller. 🌏</span>
+            <span class="flip_baker">cookie baker. 🧁</span>
+            <span class="flip_marathon">marathon participant. 🤸</span>
+            <span class="flip_optimist">optimist.💡 </span>
+            <span class="flip_optimist">love diverse culture. 🔮 </span>
+            <span class="flip_optimist">big fan of sunset. 🌅 </span>
+            <span class="flip_optimist">was a cabin crew. ✈️ </span>
+            <span class="flip_optimist">enjoy painting. 🎨 </span>
+          </span>
+        </h3>
         <button class="home__contact">Contact Me</button>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="section section__container">
-      <h1>About me</h1>
-      <p>
-        I'm a code dreamer from graphic designer and air service background.
-        <br />
-        Love working with diverse people in the world.
-        <i class="fa-solid fa-earth-asia"></i>
-      </p>
-      <div class="about__majors">
-        <div class="major">
-          <div class="major__icon">
-            <i class="fa-brands fa-html5"></i>
-          </div>
-          <h2 class="major__title">Front-end</h2>
-          <div class="major__description">HTML, CSS, JavaScript, React</div>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fa-solid fa-wand-magic-sparkles"></i>
-          </div>
-          <h2 class="major__title">Design</h2>
-          <div class="major__description">Photoshop, Illustrator, InDesign</div>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fa-brands fa-git-alt"></i>
-          </div>
-          <h2 class="major__title">Cooperation</h2>
-          <div class="major__description">GitHub</div>
-        </div>
-      </div>
-      <div class="about__jobs">
-        <div class="job">
-          <div class="job__brand">
-            <img
-              src="imgs/jobs/sejong_cnp_logo.jpg"
-              alt="sejong c&p"
-              class="job__logo"
-            />
-          </div>
-
-          <div class="job__description">
-            <p class="job__name">
-              Worked as a graphic promotion designer in VMD design part at
-              Sejong C&P
-            </p>
-            <p class="job__period">April - May 2022</p>
-          </div>
-        </div>
-        <div class="education">
-          <div class="education__brand">
-            <img
-              src="imgs/education/greenJongroArt_logo.JPG"
-              alt="greenJongroArt institute"
-              class="education__logo"
-            />
-          </div>
-
-          <div class="education__description">
-            <p class="education__name">
-              Completed & Dealt with practical process of publishing digital
-              editorial design course
-            </p>
-            <p class="education__period">OCT 2021 - March 2022</p>
-          </div>
-        </div>
-        <div class="job">
-          <div class="job__brand">
-            <img
-              src="imgs/jobs/cognizant-new-logo.jpg"
-              alt="cognizant"
-              class="job__logo"
-            />
-          </div>
-
-          <div class="job__description">
-            <p class="job__name">
-              Worked as a senior process executive in CovDev Malaysia SDN BHD
-              based in Kuala Lumpur, Malaysia
-            </p>
-            <p class="job__period">Dec 2019 - July 2021</p>
-          </div>
-        </div>
-        <div class="job">
-          <div class="job__brand">
-            <img
-              src="imgs/jobs/vietjet-aviation-logo-A823494846-seeklogo.com.png"
-              alt="vietjet air"
-              class="job__logo"
-            />
-          </div>
-
-          <div class="job__description">
-            <p class="job__name">Cabin crew based in Da Nang city, Vietnam</p>
-            <p class="job__period">Aug 2018 - Nov 2019</p>
-          </div>
-        </div>
-        <div class="job">
-          <div class="job__brand">
-            <img
-              src="imgs/jobs/air-korea_eng.jpg"
-              alt="airkorea"
-              class="job__logo"
-            />
-          </div>
-
-          <div class="job__description">
-            <p class="job__name">
-              Ground crew in AirAsia X & Thai AirAsia X, OAL department in
-              Incheon Int. airport
-            </p>
-            <p class="job__period">March 2014 - April 2015</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills  -->
-    <section id="skills" class="section">
-      <div class="section__container">
-        <h1>Skills</h1>
-        <h2>Skills &amp; Attribute</h2>
-        <p>
-          Self-taught and experience in front-end internship, graphic design.
-          Passion for learning new technologies. Capable of Working within a
-          team environment and independently. Ability to plan and time schedule,
-          work under strict time pressure and adapt quickly when needed.
-        </p>
-        <div class="skillset">
-          <div class="skillset__left">
-            <h3 class="skillset__title">Skills</h3>
-            <div class="skill">
-              <div class="skill__description">
-                <span>HTML</span>
-                <span>99%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 99%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>CSS</span>
-                <span>90%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 90%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>JAVASCRIPT</span>
-                <span>90%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 90%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>REACT</span>
-                <span>88%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 88%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>PHOTOSHOP</span>
-                <span>90%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 90%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>ILLUSTRATOR</span>
-                <span>88%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 88%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
-                <span>INDESIGN</span>
-                <span>90%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 90%"></div>
-              </div>
-            </div>
-          </div>
-          <div class="skillset__right">
-            <div class="tools">
-              <h3 class="skillset__title">Tools</h3>
-              <ul class="tools__list">
-                <li><span>Visual Studio Code</span></li>
-                <li><span>Github</span></li>
-                <li><span>Adobe Photoshop</span></li>
-                <li><span>Adobe Illustrator</span></li>
-                <li><span>Adobe InDesign</span></li>
-                <li><span>Figma</span></li>
-              </ul>
-            </div>
-            <div class="etc">
-              <h3 class="skillset__title">Etc</h3>
-              <ul class="etc__list">
-                <li><span>Git</span></li>
-                <li><span>Word</span></li>
-                <li><span>PowerPoint</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
     <!-- Work -->
     <section id="work" class="section">
       <div class="section__container">
-        <h1>My work</h1>
-        <h3>Projects</h3>
+        <h3>WORK</h3>
+        <h2>Projects</h2>
         <div class="work__categrories">
           <button class="category__btn selected" data-filter="*">
             All <span class="category__count">12</span>
@@ -321,7 +115,7 @@
               alt="2 song player"
             />
             <div class="project__description">
-              <h3>Project2</h3>
+              <h4>Project2</h4>
               <span>Clone coding with HTML and CSS</span>
             </div>
           </a>
@@ -337,7 +131,7 @@
               alt="colour run mobile ticket"
             />
             <div class="project__description">
-              <h3>Promotion 1</h3>
+              <h4>Promotion 1</h4>
               <span
                 >Color run mobile ticket <br />with Photoshop &
                 Illustrator</span
@@ -356,7 +150,7 @@
               alt="Color run banner"
             />
             <div class="project__description">
-              <h3>Promotion 2</h3>
+              <h4>Promotion 2</h4>
               <span>Color run banner with Photoshop & Illustrator</span>
             </div>
           </a>
@@ -372,7 +166,7 @@
               alt="gpana chocolate logo on apple airpot"
             />
             <div class="project__description">
-              <h3>Brand Identity</h3>
+              <h4>Brand Identity</h4>
               <span>GHANA BI logo with Illustrator</span>
             </div>
           </a>
@@ -388,7 +182,7 @@
               alt="flea marktet poster mock up"
             />
             <div class="project__description">
-              <h3>Poster</h3>
+              <h4>Poster</h4>
               <span>Flea market poster with Illustrator</span>
             </div>
           </a>
@@ -404,7 +198,7 @@
               alt="Catalogue"
             />
             <div class="project__description">
-              <h3>Catalogue</h3>
+              <h4>Catalogue</h4>
               <span>Korean air redesign with InDesign</span>
             </div>
           </a>
@@ -420,7 +214,7 @@
               alt="Leaflet"
             />
             <div class="project__description">
-              <h3>Leaflet</h3>
+              <h4>Leaflet</h4>
               <span>Tate gallery leaflet<br />with Illustrator & InDesign</span>
             </div>
           </a>
@@ -436,7 +230,7 @@
               alt="artwork"
             />
             <div class="project__description">
-              <h3>Artwork</h3>
+              <h4>Artwork</h4>
               <span>London Eye view with Photoshop</span>
             </div>
           </a>
@@ -444,67 +238,354 @@
       </div>
     </section>
 
-    <!-- Testimonials -->
-    <section id="testimonials" class="section">
+    <!-- Skills  -->
+    <section id="skills" class="section">
       <div class="section__container">
-        <h1>Testimonials</h1>
-        <h3>See what they say about me</h3>
-        <div class="testimonials">
-          <div class="testimonial">
-            <img
-              src="imgs/people/people1_12942eb352.jpg"
-              alt="People"
-              class="testimonial__avatar"
-            />
-            <div class="testimonial__speech-bubble">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis, praesentium.
-              </p>
-              <p class="name"><a href="">Kaboon</a> / Cogdev Malaysia BHD</p>
+        <div class="section__container__different">
+        <!-- <h1>Skills</h1> -->
+        <div class="skills__myDescription">
+         <h3>SKILLS & ATTRIBUTE</h3>
+         <h2>My Toolbox & Things I can do</h2>
+         <p>
+          Self-taught in front-end and passion for learning new technologies. Capable of Working within a
+          team environment and independently. Ability to plan and time schedule,
+          work under strict time pressure and adapt quickly when needed.
+         </p>
+         <h4>Currently working on:</h4>
+         <p>Improving my skills in, and understanding of vanilla JavaScript. Also, having fun with #100DaysOfCode building & animating things vis CSS. <button>Follow my Journey Here</button> .</p>
+         <div class="about__majors">
+          <div class="major">
+            <span class="major__icon">
+              <i class="fa-brands fa-html5"></i>
+              <!-- <i class="fa-brands fa-css3-alt"></i>
+              <i class='bx bxl-visual-studio'></i>
+              <i class="fa-brands fa-js"></i>
+              <i class="fa-brands fa-github"></i>
+              <i class='bx bxs-devices'></i> -->
+            </span>
+            <span class="major__icon">
+              <i class="fa-brands fa-css3-alt"></i>
+            </span>
+            <span class="major__icon">
+              <i class="fa-brands fa-js"></i>
+            </span>
+            <span class="major__icon">
+              <i class='bx bxl-visual-studio'></i>
+            </span>
+            <span class="major__icon">
+              <i class="fa-brands fa-github"></i>
+            </span>
+            <span class="major__icon">
+              <i class='bx bxs-devices'></i>
+            </span>
+            <h3 class="major__title">Front-end</h3>
+            <div class="major__description">HTML, CSS, JavaScript, Github,<br> Responsive Websites, VS code</div>
+          </div>
+          <div class="major">
+            <span class="major__icon">
+              <i class='bx bxl-adobe'></i>
+            </span>
+            <span class="major__icon">
+              <i class='bx bxl-figma'></i>
+            </span>
+            <h3 class="major__title">Design</h3>
+            <div class="major__description">
+              Photoshop, Illustrator, <br> InDesign, Figma
             </div>
           </div>
-          <div class="testimonial">
-            <div class="testimonial__speech-bubble">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis, praesentium.
-              </p>
-              <p class="name"><a href="">Kaboon</a> / Cogdev Malaysia BHD</p>
+         </div>
+        </div>
+        <div class="skillset">
+          <div class="skillset__charts">
+            <h4 class="skillset__title">Skills</h4>
+            <div class="skill">
+              <div class="skill__chart">
+                <div class="skill__description">
+                <span>HTML</span>
+                <span>95%</span>
+                </div>
+                <div class="skill__bar">
+                <div class="skill__value" style="width: 95%"></div>
+                </div>
+              </div>
             </div>
-            <img
-              src="imgs/people/people1_12942eb352.jpg"
-              alt="People"
-              class="testimonial__avatar"
-            />
+            <div class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>JAVASCRIPT</span>
+                <span>30%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 30%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>PHOTOSHOP</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>ILLUSTRATOR</span>
+                <span>85%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>INDESIGN</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>FIGMA</span>
+                <span>30%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 30%"></div>
+              </div>
+            </div>
+          </div>
+
+               
+              </ul>
+            </div>
+
           </div>
         </div>
       </div>
+      </div>
+    </section>
+
+
+
+    <!-- About -->
+    <section id="about" class="section__container">
+          <h3>ABOUT ME</h3>
+          <div class="about__content">
+            <div class="about__me__detail">
+              <div class="about__profil">
+               <img
+                src="imgs/profile/profile-pic.png"
+                alt="Kate's profile photo"
+                class="about__avatar"
+               />
+              </div>
+              <div class="about__me__detail__right">
+                <div class="about__me__detail__description">
+               <h2>Kate,</h2>
+               <p>
+                I'm a code dreamer from graphic designer and air service background.
+                <br />
+                Love working with diverse people in the world. 🌏
+               </p>
+                </div>
+                <a role="button" target="_blank" href="#">Learn more</a>
+              </div>
+          </div>
+            <!-- <div class="about__experience">
+              <div class="about__jobs">
+                <div class="job">
+                  <div class="job__brand">
+                    <img
+                      src="imgs/jobs/sejong_cnp_logo.jpg"
+                      alt="sejong c&p"
+                      class="job__logo"
+                    />
+                  </div>
+                  <div class="job__description">
+                    <p class="job__name">
+                      Worked as a graphic promotion designer in VMD design part at
+                      Sejong C&P
+                    </p>
+                    <p class="job__period">April - May 2022</p>
+                  </div>
+                </div>
+    
+                <div class="job">
+                  <div class="job__brand">
+                    <img
+                      src="imgs/jobs/cognizant-new-logo.jpg"
+                      alt="cognizant"
+                      class="job__logo"
+                    />
+                  </div>
+    
+                  <div class="job__description">
+                    <p class="job__name">
+                      Worked as a senior process executive in CovDev Malaysia SDN
+                      BHD based in Kuala Lumpur, Malaysia
+                    </p>
+                    <p class="job__period">Dec 2019 - July 2021</p>
+                  </div>
+                </div>
+                <div class="job">
+                  <div class="job__brand">
+                    <img
+                      src="imgs/jobs/vietjet-aviation-logo-A823494846-seeklogo.com.png"
+                      alt="vietjet air"
+                      class="job__logo"
+                    />
+                  </div>
+    
+                  <div class="job__description">
+                    <p class="job__name">
+                      Cabin crew based in Da Nang city, Vietnam
+                    </p>
+                    <p class="job__period">Aug 2018 - Nov 2019</p>
+                  </div>
+                </div>
+                <div class="job">
+                  <div class="job__brand">
+                    <img
+                      src="imgs/jobs/air-korea_eng.jpg"
+                      alt="airkorea"
+                      class="job__logo"
+                    />
+                  </div>
+    
+                  <div class="job__description">
+                    <p class="job__name">
+                      Ground crew in AirAsia X & Thai AirAsia X, OAL department in
+                      Incheon Int. airport
+                    </p>
+                    <p class="job__period">March 2014 - April 2015</p>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+      <div class="section__container">
+        <h3>Testimonials</h3>
+        <h4>See what they say about me</h4>
+        <div class="testimonials">
+          <div class="testimonial">
+            <img
+              src="imgs/people/kah boon.png"
+              alt="People"
+              class="testimonial__avatar"
+            />
+            <div class="testimonial__speech-bubble">
+              <i class="fa-solid fa-quote-left"></i>
+              <div class="testimonial__speech-bubble__speech">
+               <p>
+                Excellent written, reading & spoken coummnucations skils in
+                Korean Langugage and understanding of cultural nuances. plus,
+                good communications skills(English)
+               </p>
+               <p class="name">
+                <a href="">Kah Boon(Team Leader)</a> / Cogdev Malaysia BHD
+               </p>
+              </div>
+              <div class="testimonial__speech-bubble__second__quotation">
+              <i class="fa-solid fa-quote-left"></i>
+
+              <i class="fa-solid fa-quote-right"></i>
+            </div>
+              
+            </div>
+          </div>
+          <!-- <div class="testimonial">
+            <div class="testimonial__speech-bubble">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis, praesentium.
+              </p>
+              <p class="name"><a href="">Kaboon</a> / Cogdev Malaysia BHD</p>
+            </div>
+            <img
+              src="imgs/people/people1_12942eb352.jpg"
+              alt="People"
+              class="testimonial__avatar"
+            />
+          </div> -->
+        </div>
+      </div>
+
+                  <!-- <div class="education">
+              <div class="education__brand">
+                <img
+                  src="imgs/education/greenJongroArt_logo.JPG"
+                  alt="greenJongroArt institute"
+                  class="education__logo"
+                />
+              </div>
+
+              <div class="education__description">
+                <p class="education__name">
+                  Completed & Dealt with practical process of publishing digital
+                  editorial design course
+                </p>
+                <p class="education__period">OCT 2021 - March 2022</p>
+              </div>
+            </div> -->
     </section>
 
     <!-- Contact -->
     <section id="contact" class="section">
-      <h1 class="contact__title">Let's talk</h1>
-      <h2 class="contact__email">kdj4027@gmail.com</h2>
-      <div class="contact__links">
-        <a href="https://github.com/0katieeze" target="_blank">
+      <div class="section__container">
+        <h1 class="contact__title">Let's talk</h1>
+        
+        <h3 class="contact__email">
+          <a href="mailto:kdj4027@gmail.com">kdj4027@gmail.com</a>
+        </h3>
+        <div class="contact__links">
+          <a href="https://github.com/0katieeze" target="_blank">
           <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/kate-dajeongkim/" target="_blank">
+          </a>
+          <a href="https://www.linkedin.com/in/kate-dajeongkim/" target="_blank">
           <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://linktr.ee/kateeze" target="_blank">
-          <i class="fa-solid fa-link"></i>
-        </a>
+          </a>
+          <a href="https://linktr.ee/kateeze" target="_blank">
+            <i class="fa-solid fa-link"></i>
+          </a>
+        </div>
+        <p class="contact__rights">
+          © 2023 code dreamer Kate - All rights reserved
+        </p>
       </div>
-      <p class="contact__rights">
-        2023 code dreamer Kate - All rights reserved
-      </p>
+      <!-- line -->
+      <div class="footer_line">
+        <div class="footer__logo">
+          <i class="fab fa-diaspora"></i>
+          <a href="#">KATE</a>
+        </div>
+  
+      </div>
     </section>
+
 
     <!-- Arrow up-->
     <button class="up_button">
       <i class="fa-solid fa-arrow-up"></i>
     </button>
+
+
+    <!-- <li><span>Github</span></li>
+    <li><span>Visual Studio Code</span></li>
+    <li><span>PowerPoint</span></li>
+    <li><span>Word</span></li> -->
   </body>
 </html>
