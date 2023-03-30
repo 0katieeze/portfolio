@@ -365,7 +365,8 @@ h2 .home__description__flip-contianer span:first-child {
   /* border: 1px solid var(--color-dark-white); */
   border-radius: 25px;
   font-size: var(--font-small);
-  padding: 8px 22px;
+  padding: 10px 46px;
+  position: relative;
 }
 
 .category__btn.selected,
@@ -388,9 +389,11 @@ h2 .home__description__flip-contianer span:first-child {
   height: 25px;
   line-height: 25px;
   display: inline-block;
-  position: relative;
-  top: -20px;
-  left: 4px;
+  /* position: relative; */
+  position: absolute;
+  top: -25px;
+  /* left: 4px; */
+  right: 12px;
   opacity: 0;
   font-size: var(--font-micro);
   transition: all var(--animation-duration);
@@ -1014,12 +1017,46 @@ flex-direction: column;
   .work__categrories {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
+/*  */
+.category__btn {
+  /* border: 1px solid var(--color-dark-white); */
+  border-radius: 25px;
+  font-size: var(--font-small);
+  padding: 10px 46px;
+  position: relative;
+}
+
+.category__count {
+  background-color: var(--color-orange);
+  border-radius: 50%;
+  color: var(--color-white);
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  display: inline-block;
+  /* position: relative; */
+  position: absolute;
+  top: -25px;
+  /* left: 4px; */
+  right: 12px;
+  opacity: 0;
+  font-size: var(--font-micro);
+  transition: all var(--animation-duration);
+ 
+}
+/*  */
+
+
   .category__btn {
-    margin: 1px 0;
-    padding: 5px 22px;
+    margin: 3px 0;
+    width: 60%;
+    /* padding: 10px 22px; */
   }
+
+
 
   .about__majors {
     flex-direction: column;
@@ -1050,6 +1087,10 @@ flex-direction: column;
     align-items: center;
   }
   
+  #about.section__container {
+    padding: 16px;
+    padding-top: 80px;
+  }
 
   .about__me__detail {
     flex-direction: column;
@@ -1093,6 +1134,7 @@ flex-direction: column;
 
   .section {
     padding: 16px;
+    padding-top: 80px;
   }
 
   #contact {
@@ -1109,6 +1151,11 @@ flex-direction: column;
 
   .contact__links {
     margin: 26px 0;
+    /* margin-bottom: 30px; */
+  }
+
+  #contact.section {
+    padding-top: 20px;
   }
 
   .footer_line {
