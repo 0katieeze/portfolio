@@ -425,8 +425,10 @@ h2 .home__description__flip-contianer span:first-child {
   justify-content: center;
   align-items: center;
   border-radius: var(--size-border-radius);
-  width: 700px;
-  height: 460px;
+  /* width: 700px;
+  height: 460px; */
+  width: 400px;
+  height: 360px;
   margin: 10px;
   background-color: var(--color-white);
   box-shadow: var(--box-shadow);
@@ -502,12 +504,15 @@ h2 .home__description__flip-contianer span:first-child {
 .skills__myDescription {
   /* width: 580px; */
   flex-basis: 58%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
 }
 
 .skills__myDescription h4{
  font-weight: var(--weight-bold);
  font-size: var(--font-medium);
- margin-top: 30px;
+ /* margin-top: 150px; */
  color: var(--color-blue);
 }
 
@@ -519,6 +524,39 @@ h2 .home__description__flip-contianer span:first-child {
   margin-top: 20px;
   width: 205px;
   
+}
+
+.skills__myDescription__icons {
+  font-size: 55px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 30px 0;
+  align-items: self-start;
+  color: var(--color-apricot);
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.skills__myDescription__icons i:nth-child(1), .skills__myDescription__icons i:nth-child(2), .skills__myDescription__icons i:nth-child(3) {
+  padding: 2px 8px;
+  /* background-color: #1a9cff; */
+}
+
+
+.skills__myDescription__icons i:hover, .skills__myDescription__icons img:hover {
+  transition: all var(--animation-duration) ease-in;
+  transform: scale(1.1);
+ 
+}
+
+.skills__myDescription__icons__tool {
+ margin: 5px 30px;
+}
+
+.skills__myDescription__icon__name {
+  font-size: var(--font-small);
+  color: var(--color-dark-grey);
 }
 
 
@@ -559,7 +597,6 @@ flex-direction: column;
 .skillset__chart {
   display: flex;
   flex-direction: column;
-
 }
 
 .skill__description {
@@ -1105,6 +1142,26 @@ flex-direction: column;
   .major {
     margin-bottom: 38px;
   }
+
+  .skills__myDescription__icons {
+    font-size: 40px;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    /* flex-wrap: wrap; */
+  }
+
+  .skills__myDescription__icon img{
+    width: 45px;
+  }
+
+  .skills__myDescription__icons__tool {
+    margin: 10px 3px;
+  }
+
+  .skills__myDescription a {
+    width: 183px;
+  }
+
 
   .skillset {
     align-items: center;
