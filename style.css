@@ -357,6 +357,18 @@ h2 .home__description__flip-contianer span:first-child {
 }
 
 
+/* .additional {
+ display: block;
+ max-width: var(--icon_image-max-width);
+ height: auto;
+ border: 0;
+}
+
+.additional_img {
+  width: 100%;
+  height: 30%;
+} */
+
 /* Work */
 
 #work {
