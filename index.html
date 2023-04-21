@@ -1,69 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kate's portfolio</title>
-    <meta
-      name="description"
-      content="Portfolio for world-renowned software engineer Kate"
-    />
-    <meta name="author" content="Kate" />
-    <link rel="shortcut icon" type="image/x-icon" href="imgs/icon/favicon.ico" />
-    <script
-      src="https://kit.fontawesome.com/4ed602065d.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
-  </head>
-  <body>
-    <!-- <h1>Heading</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kate's portfolio</title>
+  <meta name="description" content="Portfolio for world-renowned software engineer Kate" />
+  <meta name="author" content="Kate" />
+  <link rel="shortcut icon" type="image/x-icon" href="imgs/icon/favicon.ico" />
+  <script src="https://kit.fontawesome.com/4ed602065d.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <!-- <h1>Heading</h1>
     <h3>Heading</h3>
     <h4>Heading</h4>
     <p>Paragraph</p> -->
 
-    <!-- Nav bar -->
-    <nav id="navbar">
-      <div class="navbar__logo">
-        <i class="fab fa-diaspora"></i>
-        <a href="#">KATE</a>
-      </div>
-      <ul class="navbar__menu">
-        <li class="navbar__menu__item active" data-link="#home">Home</li>
-        <li class="navbar__menu__item" data-link="#work">Work</li>
-        <li class="navbar__menu__item" data-link="#skills">Skills</li>
-        <li class="navbar__menu__item" data-link="#about">About</li>
-        <li class="navbar__menu__item" data-link="#testimonials">
-          Testimonials
-        </li>
-        <li class="navbar__menu__item" data-link="#contact">Contact</li>
-      </ul>
+  <!-- Nav bar -->
+  <nav id="navbar">
+    <div class="navbar__logo">
+      <i class="fab fa-diaspora"></i>
+      <a href="#">KATE</a>
+    </div>
+    <ul class="navbar__menu">
+      <li class="navbar__menu__item active" data-link="#home">Home</li>
+      <li class="navbar__menu__item" data-link="#work">Work</li>
+      <li class="navbar__menu__item" data-link="#skills">Skills</li>
+      <li class="navbar__menu__item" data-link="#about">About</li>
+      <li class="navbar__menu__item" data-link="#testimonials">
+        Testimonials
+      </li>
+      <li class="navbar__menu__item" data-link="#contact">Contact</li>
+    </ul>
 
-      <!-- Toggle button -->
-      <button class="navbar__toggle-btn">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <!-- <button class="navbar__toggle-btn">
+    <!-- Toggle button -->
+    <button class="navbar__toggle-btn">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <!-- <button class="navbar__toggle-btn">
         <i class="fa-solid fa-xmark"></i>
       </button> -->
-    </nav>
+  </nav>
 
-    <!-- Home -->
-    <section id="home">
-      <div class="home__container">
-        <div class="home__container__left">
-          <h1 class="home__title">G'day, I'm Kate!</h1>
-          <h2 class="home__description">
+  <!-- Home -->
+  <section id="home">
+    <div class="home__container">
+      <div class="home__container__left">
+        <h1 class="home__title">G'day, I'm Kate!</h1>
+        <h2 class="home__description">
           <span> I'm a Designer </span>turned
           <span class="home__description__career">Front-end Developer</span>
           <br /><span>and </span>
@@ -78,74 +71,59 @@
             <span class="flip_optimist">was a cabin crew. ✈️ </span>
             <span class="flip_optimist">enjoy painting. 🎨 </span>
           </span>
-          </h2>
-          <button class="home__contact">Contact Me</button>
-        </div>
-        <img class="home__avatar" src="imgs/profile/onlyface_avatar.png" alt="home avatar" >
+        </h2>
+        <button class="home__contact">Contact Me</button>
       </div>
-    </section>
-    <!-- <div class="additional">
+      <img class="home__avatar" src="imgs/profile/onlyface_avatar.png" alt="home avatar">
+    </div>
+  </section>
+  <!-- <div class="additional">
       <img class="additional_img" src="imgs/profile/Sacha_Dubois_Photography-removebg-preview.png" alt="">
     </div> -->
 
-    <!-- Work -->
-    <section id="work" class="section">
-      <div class="section__container">
-        <h3>WORK</h3>
-        <h2>Projects</h2>
-        <div class="work__categrories">
-          <button class="category__btn selected" data-filter="*">
-            All <span class="category__count">14</span>
-          </button>
-          <button class="category__btn" data-filter="front-end">
-            Front-end <span class="category__count">2</span>
-          </button>
-          <button class="category__btn" data-filter="promotion-design">
-            Promotion Design <span class="category__count">5</span>
-          </button>
-          <button class="category__btn" data-filter="editorial-design">
-            Editorial Design <span class="category__count">7</span>
-          </button>
-        </div>
+  <!-- Work -->
+  <section id="work" class="section">
+    <div class="section__container">
+      <h3>WORK</h3>
+      <h2>Projects</h2>
+      <div class="work__categrories">
+        <button class="category__btn selected" data-filter="*">
+          All <span class="category__count">15</span>
+        </button>
+        <button class="category__btn" data-filter="front-end">
+          Front-end <span class="category__count">3</span>
+        </button>
+        <button class="category__btn" data-filter="promotion-design">
+          Promotion Design <span class="category__count">5</span>
+        </button>
+        <button class="category__btn" data-filter="editorial-design">
+          Editorial Design <span class="category__count">7</span>
+        </button>
+      </div>
 
-        <div class="work__projects">
-          <a
-            href="https://xogwdo.csb.app/#"
-            class="project"
-            target="_blank"
-            data-type="front-end"
-          >
-            <img
-              class="project__img"
-              src="imgs/projects/front-end/two_song_player.JPG"
-              alt="2 song player"
-
-                 
-            />
-            <div class="project__description">
-              <h4>Project2</h4>
-              <span>Clone coding with HTML and CSS</span>
-            </div>
-          </a>
-          <a
-          href="https://jhgxcd.csb.app/"
-          class="project"
-          target="_blank"
-          data-type="front-end"
-        >
-          <img
-            class="project__img"
-            src="imgs/projects/front-end/Random Number Game.png"
-            alt="Random Numner Game"
-
-               
-          />
+      <div class="work__projects">
+        <a href="https://www.kaalikoreahr.com" class="project" target="_blank" data-type="front-end">
+          <img class="project__img" src="imgs/projects/front-end/kaalkoreahr project.JPG" alt="kaalikoreahr website" />
+          <div class="project__description">
+            <h4>Kaali Korea Hr</h4>
+            <span>Responsive Design with HTML, CSS and JavaScript</span>
+          </div>
+        </a>
+        <a href="https://0katieeze.github.io/number-project/" class="project" target="_blank" data-type="front-end">
+          <img class="project__img" src="imgs/projects/front-end/number-project.JPG" alt="number-project" />
+          <div class="project__description">
+            <h4>Number Project</h4>
+            <span>Clone coding with HTML, CSS and JavaScript</span>
+          </div>
+        </a>
+        <a href="https://jhgxcd.csb.app/" class="project" target="_blank" data-type="front-end">
+          <img class="project__img" src="imgs/projects/front-end/Random Number Game.png" alt="Random Numner Game" />
           <div class="project__description">
             <h4>Random Numner Game</h4>
             <span>Try it till you win!</span>
           </div>
         </a>
-          <!-- <a
+        <!-- <a
           href="#"
           class="project"
           target="_blank"
@@ -162,221 +140,116 @@
             <span>Redesign with Illustrator</span>
           </div>
           </a> -->
-          <a
-          href="#"
-          class="project"
-          target="_blank"
-          data-type="promotion-design"
-        >
-          <img
-            class="project__img"
-            src="imgs/projects/vmd/1st week of may2022_Hanyul, 25thApril2022_hera sephora.jpg"
-            alt="Hanyul, Hera Mobile Banner_redesign"
-           
-          />
+        <a href="#" class="project" target="_blank" data-type="promotion-design">
+          <img class="project__img" src="imgs/projects/vmd/1st week of may2022_Hanyul, 25thApril2022_hera sephora.jpg"
+            alt="Hanyul, Hera Mobile Banner_redesign" />
           <div class="project__description">
             <h4>Mobile Banner</h4>
             <span>Sephora & Oliveyoung on Kakaotalk channel with Photoshop & Illustrator</span>
           </div>
-          </a>
-          <a
-          href="#"
-          class="project"
-          target="_blank"
-          data-type="promotion-design"
-        >
-          <img
-            class="project__img"
+        </a>
+        <a href="#" class="project" target="_blank" data-type="promotion-design">
+          <img class="project__img"
             src="imgs/projects/vmd/18april2022_Amore_UV_shield_outdoor_sunpatch_package-removebg-preview.png"
-            alt="promotion box"
-             
-          />
+            alt="promotion box" />
           <div class="project__description">
             <h4>Promotion Redesign</h4>
             <span>Participated in Amore UV sunpatch package with Illustrator</span>
           </div>
-          </a>
-          <a
-          href="#"
-          class="project"
-          target="_blank"
-          data-type="promotion-design"
-        >
-          <img
-            class="project__img"
+        </a>
+        <a href="#" class="project" target="_blank" data-type="promotion-design">
+          <img class="project__img"
             src="imgs/projects/vmd/sample_redesign_Mamonde_rose_liquid_front_part_of_cosmetic_box-removebg-preview.png"
-            alt="promotion box"
-             
-          />
+            alt="promotion box" />
           <div class="project__description">
             <h4>Mamonde Package</h4>
             <span>Cosmetic box with Illustrator</span>
           </div>
-          </a>
-          <a
-          href="#"
-          class="project"
-          target="_blank"
-          data-type="promotion-design"
-        >
-          <img
-            class="project__img"
+        </a>
+        <a href="#" class="project" target="_blank" data-type="promotion-design">
+          <img class="project__img"
             src="imgs/projects/vmd/4th_weeks_of_April2022_Amore_Oliveyoubg_Laneige_radienC_cream_promotion_set_simulation_redesign-removebg-preview.png"
-            alt="promotion box"
-             
-          />
+            alt="promotion box" />
           <div class="project__description">
             <h4>Pakage Redesign</h4>
             <span>Cosmetic box with Illustrator</span>
           </div>
-          </a>
-          <a
-          href="#"
-          class="project"
-          target="_blank"
-          data-type="promotion-design"
-        >
-          <img
-            class="project__img"
+        </a>
+        <a href="#" class="project" target="_blank" data-type="promotion-design">
+          <img class="project__img"
             src="imgs/projects/vmd/4th_weeks_of_April2022_B_Laneige_water_sleeping_mask_simulation_B_redesign-removebg-preview.png"
-            alt="promotion box"
-             
-          />
+            alt="promotion box" />
           <div class="project__description">
             <h4>Pakage Redesign</h4>
             <span>Cosmetic box with Illustrator</span>
           </div>
-          </a>
-          <a
-            href="#"
-            class="project"
-            target="_blank"
-            data-type="editorial-design"
-          >
-            <img
-              class="project__img"
-              src="imgs/projects/editorial design/colour_run__mobile_ticket-removebg-.png"
-              alt="colour run mobile ticket"
-               
-            />
-            <div class="project__description">
-              <h4>Promotion 1</h4>
-              <span
-                >Color run mobile ticket <br />with Photoshop &
-                Illustrator</span
-              >
-            </div>
-          </a>
-          <a
-            href="#"
-            class="project"
-            target="_blank"
-            data-type="editorial-design"
-          >
-            <img
-              class="project__img"
-              src="imgs/projects/editorial design/FINAL_colour run banner-wbg.jpg"
-              alt="Color run banner"
-               
-            />
-            <div class="project__description">
-              <h4>Promotion 2</h4>
-              <span>Color run banner with Photoshop & Illustrator</span>
-            </div>
-          </a>
-          <a
-            href="#"
-            class="project"
-            target="_blank"
-            data-type="editorial-design"
-          >
-            <img
-              class="project__img"
-              src="imgs/projects/editorial design/ghana chocolate logo_apple airpot_Mockup_removebg.png"
-              alt="gpana chocolate logo on apple airpot"
-               
-            />
-            <div class="project__description">
-              <h4>Brand Identity</h4>
-              <span>GHANA BI logo with Illustrator</span>
-            </div>
-          </a>
-          <a
-            href="#"
-            class="project"
-            target="_blank"
-            data-type="editorial-design"
-          >
-            <img
-              class="project__img"
-              src="imgs/projects/editorial design/FLEA_MARKET_POSTER_MOCK_UP_DONE_removebg.png"
-              alt="flea marktet poster mock up"
-               
-            />
-            <div class="project__description">
-              <h4>Poster</h4>
-              <span>Flea market poster with Illustrator</span>
-            </div>
-          </a>
-          <a
-            href="#"
-            class="project"
-            target="_blank"
-            data-type="editorial-design"
-          >
-            <img
-              class="project__img"
-              src="imgs/projects/editorial design/표10, 11_KOREAN AIR_CATALOGUE _removedbg.jpg"
-              alt="Catalogue"
-               
-            />
-            <div class="project__description">
-              <h4>Catalogue</h4>
-              <span>Korean air redesign with InDesign</span>
-            </div>
-          </a>
-          <a
-            href="#"
-            class="project"
-            target="_blank"
-            data-type="editorial-design"
-          >
-            <img
-              class="project__img"
-              src="imgs/projects/editorial design/ENG)3 cover leaflet_tate_김다정_wbg.jpg"
-              alt="Leaflet"
-               
-            />
-            <div class="project__description">
-              <h4>Leaflet</h4>
-              <span>Tate gallery leaflet<br />with Illustrator & InDesign</span>
-            </div>
-          </a>
-          <a
-            href="#"
-            class="project"
-            target="_blank"
-            data-type="editorial-design"
-          >
-            <img
-              class="project__img"
-              src="imgs/projects/editorial design/Final_ landscape  in a cup of wine copy.jpg"
-              alt="artwork"
-               
-            />
-            <div class="project__description">
-              <h4>Artwork</h4>
-              <span>London Eye view with Photoshop</span>
-            </div>
-          </a>
-        </div>
+        </a>
+        <a href="#" class="project" target="_blank" data-type="editorial-design">
+          <img class="project__img" src="imgs/projects/editorial design/colour_run__mobile_ticket-removebg-.png"
+            alt="colour run mobile ticket" />
+          <div class="project__description">
+            <h4>Promotion 1</h4>
+            <span>Color run mobile ticket <br />with Photoshop &
+              Illustrator</span>
+          </div>
+        </a>
+        <a href="#" class="project" target="_blank" data-type="editorial-design">
+          <img class="project__img" src="imgs/projects/editorial design/FINAL_colour run banner-wbg.jpg"
+            alt="Color run banner" />
+          <div class="project__description">
+            <h4>Promotion 2</h4>
+            <span>Color run banner with Photoshop & Illustrator</span>
+          </div>
+        </a>
+        <a href="#" class="project" target="_blank" data-type="editorial-design">
+          <img class="project__img"
+            src="imgs/projects/editorial design/ghana chocolate logo_apple airpot_Mockup_removebg.png"
+            alt="gpana chocolate logo on apple airpot" />
+          <div class="project__description">
+            <h4>Brand Identity</h4>
+            <span>GHANA BI logo with Illustrator</span>
+          </div>
+        </a>
+        <a href="#" class="project" target="_blank" data-type="editorial-design">
+          <img class="project__img" src="imgs/projects/editorial design/FLEA_MARKET_POSTER_MOCK_UP_DONE_removebg.png"
+            alt="flea marktet poster mock up" />
+          <div class="project__description">
+            <h4>Poster</h4>
+            <span>Flea market poster with Illustrator</span>
+          </div>
+        </a>
+        <a href="#" class="project" target="_blank" data-type="editorial-design">
+          <img class="project__img" src="imgs/projects/editorial design/표10, 11_KOREAN AIR_CATALOGUE _removedbg.jpg"
+            alt="Catalogue" />
+          <div class="project__description">
+            <h4>Catalogue</h4>
+            <span>Korean air redesign with InDesign</span>
+          </div>
+        </a>
+        <a href="#" class="project" target="_blank" data-type="editorial-design">
+          <img class="project__img" src="imgs/projects/editorial design/ENG)3 cover leaflet_tate_김다정_wbg.jpg"
+            alt="Leaflet" />
+          <div class="project__description">
+            <h4>Leaflet</h4>
+            <span>Tate gallery leaflet<br />with Illustrator & InDesign</span>
+          </div>
+        </a>
+        <a href="#" class="project" target="_blank" data-type="editorial-design">
+          <img class="project__img" src="imgs/projects/editorial design/Final_ landscape  in a cup of wine copy.jpg"
+            alt="artwork" />
+          <div class="project__description">
+            <h4>Artwork</h4>
+            <span>London Eye view with Photoshop</span>
+          </div>
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Skills  -->
-    <section id="skills" class="section">
-      <div class="section__container">
-        <div class="section__container__different">
+  <!-- Skills  -->
+  <section id="skills" class="section">
+    <div class="section__container">
+      <div class="section__container__different">
         <!-- <h1>Skills</h1> -->
         <div class="skills__myDescription">
           <h3>SKILLS & ATTRIBUTE</h3>
@@ -407,7 +280,7 @@
             </div>
             <div class="skills__myDescription__icons__tool">
               <span class="skills__myDescription__icon">
-                <i class='bx bxs-devices' ></i>
+                <i class='bx bxs-devices'></i>
               </span>
               <div class="skills__myDescription__icon__name">Responsive <br>Website</div>
             </div>
@@ -419,7 +292,7 @@
             </div>
             <div class="skills__myDescription__icons__tool">
               <span class="skills__myDescription__icon">
-                <i class="fa-brands fa-github"></i>              
+                <i class="fa-brands fa-github"></i>
               </span>
               <div class="skills__myDescription__icon__name">Github</div>
             </div>
@@ -431,28 +304,29 @@
             </div>
             <div class="skills__myDescription__icons__tool">
               <span class="skills__myDescription__icon">
-                <img width="67px" src="imgs/icon/4883600_adobe_extension_file_format_photoshop_icon-removebg-preview (1).png" alt="">
+                <img width="67px"
+                  src="imgs/icon/4883600_adobe_extension_file_format_photoshop_icon-removebg-preview (1).png" alt="">
               </span>
               <div class="skills__myDescription__icon__name">Adobe <br>Photoshop</div>
             </div>
             <div class="skills__myDescription__icons__tool">
               <span class="skills__myDescription__icon">
-                <img width="67px" src="imgs/icon/4883598_adobe_extension_file_format_illustrator_icon.png"
-              </span>
-              <div class="skills__myDescription__icon__name">Adobe <br>Illustrator</div>
+                <img width="67px" src="imgs/icon/4883598_adobe_extension_file_format_illustrator_icon.png" </span>
+                <div class="skills__myDescription__icon__name">Adobe <br>Illustrator</div>
             </div>
             <div class="skills__myDescription__icons__tool">
               <span class="skills__myDescription__icon">
-                <img width="67px" src="imgs/icon/4883606_adobe_extension_file_format_indesign_icon.png"
-              </span>
-              <div class="skills__myDescription__icon__name">Adobe <br>InDesign</div>
+                <img width="67px" src="imgs/icon/4883606_adobe_extension_file_format_indesign_icon.png" </span>
+                <div class="skills__myDescription__icon__name">Adobe <br>InDesign</div>
             </div>
           </div>
           <h4>Currently working on:</h4>
-          <p>Improving my skills in, and more understanding of JavaScript. Also, having fun with #Codeit:) and building & animating things via CSS. 
+          <p>Improving my skills in, and more understanding of JavaScript. Also, having fun with
+            #2monthsOfSheCodesMax and building & animating things via CSS.
             <!-- <br><button>Follow my Journey Here</button> . -->
           </p>
-          <a role="button" target="_blank" href="https://www.linkedin.com/in/kate-dajeongkim/">Follow my Journey Here</a>
+          <a role="button" target="_blank" href="https://www.linkedin.com/in/kate-dajeongkim/">Follow my Journey
+            Here</a>
           <!-- <div class="about__majors">
           <div class="major">
             <span class="major__icon">
@@ -486,11 +360,11 @@
             <div class="skill">
               <div class="skill__chart">
                 <div class="skill__description">
-                <span>HTML</span>
-                <span>95%</span>
+                  <span>HTML</span>
+                  <span>95%</span>
                 </div>
                 <div class="skill__bar">
-                <div class="skill__value" style="width: 95%"></div>
+                  <div class="skill__value" style="width: 95%"></div>
                 </div>
               </div>
             </div>
@@ -550,72 +424,75 @@
             </div>
           </div>
 
-               
-              </ul>
-            </div>
 
-          </div>
+          </ul>
         </div>
+
       </div>
-      </div>
-    </section>
+    </div>
+    </div>
+    </div>
+  </section>
 
 
 
-    <!-- About -->
-    <section id="about" class="section">
-      <div class="section__container">
-          <h3>ABOUT ME</h3>
-          <div class="about__content">
-            <div class="about__me__detail">
-              <div class="about__profil">
-                <div class="about__majors">
-                  <div class="major">
-                    <span class="major__icon">
-                      <i class="fa-solid fa-plane-departure"></i>
-                    </span>
-                    <h3 class="major__title">Air Service</h3>
-                    <div class="major__description">Cabin Crew</div>
-                  </div>
-                  <div class="major">
-                    <span class="major__icon">
-                      <i class='bx bxl-adobe'></i>
-                    </span>
-                    <h3 class="major__title">Design</h3>
-                    <div class="major__description">
-                      Editorial & Web
-                    </div>
-                  </div>
-                  <div class="major">
-                    <span class="major__icon">
-                      <i class="fa-brands fa-html5"></i>
-                    </span>
-                    <h3 class="major__title">Front-end</h3>
-                    <div class="major__description">Code Dreamer</div>
-                  </div>
-        
-                 </div>
-               <!-- <img
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="section__container">
+      <h3>ABOUT ME</h3>
+      <div class="about__content">
+        <div class="about__me__detail">
+          <div class="about__profil">
+            <div class="about__majors">
+              <div class="major">
+                <span class="major__icon">
+                  <i class="fa-solid fa-plane-departure"></i>
+                </span>
+                <h3 class="major__title">Air Service</h3>
+                <div class="major__description">Cabin Crew</div>
+              </div>
+              <div class="major">
+                <span class="major__icon">
+                  <i class='bx bxl-adobe'></i>
+                </span>
+                <h3 class="major__title">Design</h3>
+                <div class="major__description">
+                  Editorial & Web
+                </div>
+              </div>
+              <div class="major">
+                <span class="major__icon">
+                  <i class="fa-brands fa-html5"></i>
+                </span>
+                <h3 class="major__title">Front-end</h3>
+                <div class="major__description">Code Dreamer</div>
+              </div>
+
+            </div>
+            <!-- <img
                 src="imgs/profile/profile-pic (13).png"
                 alt="Kate's profile photo"
                 class="about__avatar"
                /> -->
-              </div>
-              <div class="about__me__detail__right">
-                <div class="about__me__detail__description">
-               <h2>Kate,</h2>
-               <p>
-                I'm a code dreamer with a graphic designer and an air service background. I love working with diverse people in the world. 🌏
-                <br>
-                <br>With a passion for crafting intuitive, streamlined solutions across various platforms and systems, I made the leap from the Air service industry and content moderator to graphic VMD design in just 6 months and studied Web development to pivot my career. I desire to land a job abroad as a Front-end developer.
-                
-                <!-- When I'm not designing, you can find me exploring architecture and art museums, painting abstract masterpieces, writing thought-provoking blogs, and immersing myself in the sounds of jazz, techno, house, and disco music. -->
-               </p>
-                </div>
-                <a role="button" target="_blank" href="https://read.cv/katekim">Learn more</a>
-              </div>
           </div>
-            <!-- <div class="about__experience">
+          <div class="about__me__detail__right">
+            <div class="about__me__detail__description">
+              <h2>Kate,</h2>
+              <p>
+                I'm a code dreamer with a graphic designer and an air service background. I love working with diverse
+                people in the world. 🌏
+                <br>
+                <br>With a passion for crafting intuitive, streamlined solutions across various platforms and systems, I
+                made the leap from the Air service industry and content moderator to graphic VMD design in just 6 months
+                and studied Web development to pivot my career. I desire to land a job abroad as a Front-end developer.
+
+                <!-- When I'm not designing, you can find me exploring architecture and art museums, painting abstract masterpieces, writing thought-provoking blogs, and immersing myself in the sounds of jazz, techno, house, and disco music. -->
+              </p>
+            </div>
+            <a role="button" target="_blank" href="https://read.cv/katekim">Learn more</a>
+          </div>
+        </div>
+        <!-- <div class="about__experience">
               <div class="about__jobs">
                 <div class="job">
                   <div class="job__brand">
@@ -686,60 +563,61 @@
                 </div>
               </div>
             </div> -->
-          </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Testimonials -->
-    <section id="testimonials" class="section">
-      <div class="section__container">
-        <h3>Testimonials</h3>
-        <h4>See what they say about me</h4>
-        <div class="testimonials">
-          <div class="testimonial">
-            <img
-              src="imgs/people/kah boon.png"
-              alt="People"
-              class="testimonial__avatar"
-            />
-            <div class="testimonial__speech-bubble">
+  <!-- Testimonials -->
+  <section id="testimonials" class="section">
+    <div class="section__container">
+      <h3>Testimonials</h3>
+      <h4>See what they say about me</h4>
+      <div class="testimonials">
+        <div class="testimonial">
+          <img src="imgs/people/kah boon.png" alt="People" class="testimonial__avatar" />
+          <div class="testimonial__speech-bubble">
+            <i class="fa-solid fa-quote-left"></i>
+            <div class="testimonial__speech-bubble__speech">
+              <p>
+                She is an exemplary employee with consistently good monthly performance and excellent work etiquette.
+              </p>
+              <p class="name">
+                <a href="">Peter Yoo (Managing Director)</a> / KAALI KOREA HR
+              </p>
+            </div>
+            <div class="testimonial__speech-bubble__second__quotation">
               <i class="fa-solid fa-quote-left"></i>
-              <div class="testimonial__speech-bubble__speech">
-               <p>
+              <i class="fa-solid fa-quote-right"></i>
+            </div>
+
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__speech-bubble">
+            <i class="fa-solid fa-quote-left"></i>
+            <div class="testimonial__speech-bubble__speech">
+              <p>
                 Excellent written, reading & spoken coummnucations skils in
                 Korean Langugage and understanding of cultural nuances. plus,
                 good communications skills(English)
-               </p>
-               <p class="name">
-                <a href="">Kah Boon(Team Leader)</a> / Cogdev Malaysia BHD
-               </p>
-              </div>
-              <div class="testimonial__speech-bubble__second__quotation">
-              <i class="fa-solid fa-quote-left"></i>
+              </p>
+              <p class="name">
+                <a href="">Kah Boon (Team Leader)</a> / Cogdev Malaysia BHD
+              </p>
 
+            </div>
+            <div class="testimonial__speech-bubble__second__quotation">
+              <i class="fa-solid fa-quote-left"></i>
               <i class="fa-solid fa-quote-right"></i>
             </div>
-              
-            </div>
           </div>
-          <!-- <div class="testimonial">
-            <div class="testimonial__speech-bubble">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis, praesentium.
-              </p>
-              <p class="name"><a href="">Kaboon</a> / Cogdev Malaysia BHD</p>
-            </div>
-            <img
-              src="imgs/people/people1_12942eb352.jpg"
-              alt="People"
-              class="testimonial__avatar"
-            />
-          </div> -->
+
+          <img src="imgs/people/kah boon.png" alt="People" class="testimonial__avatar" />
         </div>
       </div>
+    </div>
 
-                  <!-- <div class="education">
+    <!-- <div class="education">
               <div class="education__brand">
                 <img
                   src="imgs/education/greenJongroArt_logo.JPG"
@@ -756,54 +634,55 @@
                 <p class="education__period">OCT 2021 - March 2022</p>
               </div>
             </div> -->
-    </section>
+  </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <div class="section__container">
-        <h1 class="contact__title">Let's talk</h1>
-        
-        <h3 class="contact__email">
-          <a href="mailto:kdj4027@gmail.com">kdj4027@gmail.com</a>
-        </h3>
-        <div class="contact__links">
-          <a href="https://github.com/0katieeze" target="_blank">
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="section__container">
+      <h1 class="contact__title">Let's talk</h1>
+
+      <h3 class="contact__email">
+        <a href="mailto:kdj4027@gmail.com">kdj4027@gmail.com</a>
+      </h3>
+      <div class="contact__links">
+        <a href="https://github.com/0katieeze" target="_blank">
           <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/kate-dajeongkim/" target="_blank">
+        </a>
+        <a href="https://www.linkedin.com/in/kate-dajeongkim/" target="_blank">
           <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="https://linktr.ee/kateeze" target="_blank">
-            <i class="fa-solid fa-link"></i>
-          </a>
-        </div>
-        <!-- <p class="contact__rights">
+        </a>
+        <a href="https://linktr.ee/kateeze" target="_blank">
+          <i class="fa-solid fa-link"></i>
+        </a>
+      </div>
+      <!-- <p class="contact__rights">
           2023 © code dreamer Kate - All rights reserved
         </p> -->
+    </div>
+    <!-- line -->
+
+    <div class="footer_line">
+      <div class="footer__logo">
+        <i class="fab fa-diaspora"></i>
+        <a href="#">KATE</a>
       </div>
-      <!-- line -->
-
-        <div class="footer_line">
-         <div class="footer__logo">
-          <i class="fab fa-diaspora"></i>
-          <a href="#">KATE</a>
-         </div>
-        <p class="contact__rights">
-          2023 © code dreamer Kate - All rights reserved
-        </p>
-        </div>
-    </section>
+      <p class="contact__rights">
+        2023 © code dreamer Kate - All rights reserved
+      </p>
+    </div>
+  </section>
 
 
-    <!-- Arrow up-->
-    <button class="up_button">
-      <i class="fa-solid fa-arrow-up"></i>
-    </button>
+  <!-- Arrow up-->
+  <button class="up_button">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
 
 
-    <!-- <li><span>Github</span></li>
+  <!-- <li><span>Github</span></li>
     <li><span>Visual Studio Code</span></li>
     <li><span>PowerPoint</span></li>
     <li><span>Word</span></li> -->
-  </body>
+</body>
+
 </html>
