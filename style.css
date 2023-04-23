@@ -171,12 +171,12 @@ p {
 
 .navbar__menu__item:hover {
   color: var(--color-white);
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     180deg,
     var(--color-light-apricot),
     var(--color-dark-apricot)
-  );
-  /* background-color: var(--color-dark-apricot); */
+  ); */
+  background-color: var(--color-dark-apricot);
   border-radius: 20px;
   border: 1px solid var(--color-white);
 }
