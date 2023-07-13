@@ -531,7 +531,8 @@ h2 .home__description__flip-contianer span:first-child {
 
 .skills__myDescription__icons {
   font-size: 55px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   justify-content: space-between;
   text-align: center;
   padding: 30px 0;
@@ -582,7 +583,7 @@ h2 .home__description__flip-contianer span:first-child {
   flex-basis: 40%;
   background-color: var(--color-blue);
   padding: 20px 40px;
-  margin-top: 48px;
+  margin-top: 100px;
   box-shadow: var(--box-shadow);
 }
 
@@ -654,6 +655,10 @@ h2 .home__description__flip-contianer span:first-child {
 .about__me__detail__right {
   display: flex;
   flex-direction: column;
+}
+
+.about__me__detail__description {
+  margin-top: 30px;
 }
 
 .about__profile p {
@@ -1114,7 +1119,7 @@ h2 .home__description__flip-contianer span:first-child {
   .skills__myDescription__icons {
     font-size: 40px;
     justify-content: space-evenly;
-    padding: 20px 0;
+    /* padding: 30px 0; */
     /* flex-wrap: wrap; */
   }
 
